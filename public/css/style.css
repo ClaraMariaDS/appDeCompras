@@ -1,0 +1,103 @@
+#pantallaDetalle,
+#pantallaListado {
+  display: none;
+}
+
+body {
+  color: #666;
+}
+
+#botonCarga {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 130px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #29cccc;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+header {
+  background-color: #29cccc;
+  height: 90px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  box-shadow: 5px 8px 14px #999;
+}
+
+header p {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Josefin Sans", sans-serif;
+}
+#pantallaVacio {
+  text-align: center;
+  padding: 70px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.pantallaVacio__emoji {
+  height: 300px;
+  padding-bottom: 50px;
+  opacity: 10%;
+}
+
+.pantallaListado__icono {
+  width: 40px;
+  margin-right: 6px;
+}
+
+#pantallaDetalle {
+  padding: 50px;
+  text-align: center;
+}
+
+.pantallaDetalle__icono {
+  width: 250px;
+}
+
+.btn-modal-footer {
+  background-color: #29cccc;
+  border-color: #29cccc;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  border-radius: 47px;
+  width: 100px;
+  height: 45px;
+  font-size: 17px;
+}
+.btn-modal {
+  background-color: #29cccc;
+  border-color: #29cccc;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  border-radius: 47px;
+  width: 166px;
+  height: 45px;
+  font-size: 17px;
+}
+#x {
+  padding-left: 210px;
+}
+.borrar_btn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #29cccc;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  box-shadow: 5px 10px 18px #888888;
+}

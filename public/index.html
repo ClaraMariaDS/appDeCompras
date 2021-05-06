@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Tu lista de compras</title>
+  <link rel="icon" href="https://appdecompras-956e5.web.app/images/anadir-a-la-cesta.svg" type="image/png" />
+  <!--Meta Facebook -->
+  <meta property="og:title" content="TuListaDeCompras" />
+  <meta property="og:description" content="App para listado de compras" />
+  <meta property="og:type" content="WebApp" />
+  <meta property="og:image" content="https://appdecompras-956e5.web.app/images/anadir-a-la-cesta.svg" />
+  <meta property="og:url" content="https://appdecompras-956e5.web.app/" />
+
+  <!--Meta Twitter -->
+  <meta property="Twitter:title" content="TuControlDiario" />
+  <meta property="Twitter:description" content="Genera una rutina de controles para tu salud!" />
+  <meta property="Twitter:image" content="https://appdecompras-956e5.web.app/images/anadir-a-la-cesta.svg" />
+  <meta property="Twitter:url" content="https://appdecompras-956e5.web.app/" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <p>Tu listado</p>
+  </header>
+  <section id="pantallaVacio">
+    <h1 class="pantallaVacio__titulo">Carga nuevos productos!</h1>
+    <img src="images/anadir-a-la-cesta.svg" alt=""class="pantallaVacio__emoji">
+  </section>
+
+<section id="pantallaListado">
+  <ul class="list-group" id="pantallaListadoLista">
+  </ul>
+</section>
+
+<section id="pantallaDetalle">
+  <img src="images/carnes.svg" alt="" class="pantallaDetalle__icono" id="pantallaDetalleIcono">
+  <h1 id="pantallaDetalleProducto">Bife de chorizo</h1>
+  <p id="pantallaDetalleInfo">Sigo comiendo carne</p>
+  <button id="pantallaDetalleCerrar" class="btn-modal-footer">Cerrar</button>
+</section>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pantallaCarga" id="botonCarga">
+  Agregar Nuevo
+</button>
+<button type="button" class="borrar_btn" data-bs-toggle="modal" data-bs-target="#pantallaCarga" id="borrar_btn">
+  Borrar Todo
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="pantallaCarga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar productos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="pantallaCargaProducto" class="form-label">Ingresa producto</label>
+          <input type="text" class="form-control" id="pantallaCargaProducto" placeholder="Leche/Carrne">
+        </div>
+
+        <div class="mb-3">
+          <label for="pantallaCargaIcono" class="form-label">Seleciona categoría</label>
+          <select id="pantallaCargaIcono" class="form-select">
+            <option value="images/Varios.svg">Varios</option>
+            <option value="images/carnes.svg">Carnes</option>
+            <option value="images/dietetica.svg">Dietetica</option>
+            <option value="images/Farmacia.svg">Farmacia</option>
+            <option value="images/Frutas-y-verduras.svg">Frutas y Verduras</option>
+            <option value="images/indumentaria.svg">Indumentaria</option>
+            <option value="images/libreria.svg">Librería</option>
+            <option value="images/veterinaria.svg">Veterinaria</option>
+            <option value="images/almacen.svg">Almacén</option>
+          </select>
+      </div>
+      <div class="mb-3">
+        <label for="pantallaCargaInfo" class="form-label">Agrega detalles de tu compra</label>
+        <textarea class="form-control" id="pantallaCargaInfo" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-footer" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn-modal" id="pantallaCargaAdd">Agregar y Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
