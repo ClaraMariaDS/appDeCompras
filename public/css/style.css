@@ -14,7 +14,7 @@ body {
   bottom: 130px;
   right: 30px;
   border-radius: 50%;
-  background-color: #29cccc;
+  background-color: #cc3b75;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: white;
@@ -22,11 +22,14 @@ body {
 }
 
 header {
-  background-color: #29cccc;
-  height: 90px;
+  background-color: #cc3b75;
+  height: 20vh;
   border-bottom-right-radius: 35px;
   border-bottom-left-radius: 35px;
-  box-shadow: 5px 8px 14px #999;
+  box-shadow: -9px -9px 18px #999, 9px 9px 18px rgb(163, 162, 162);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header p {
@@ -63,8 +66,8 @@ header p {
 }
 
 .btn-modal-footer {
-  background-color: #29cccc;
-  border-color: #29cccc;
+  background-color: #cc3b75;
+  border-color: #cc3b75;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -74,8 +77,8 @@ header p {
   font-size: 17px;
 }
 .btn-modal {
-  background-color: #29cccc;
-  border-color: #29cccc;
+  background-color: #cc3b75;
+  border-color: #cc3b75;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -95,7 +98,7 @@ header p {
   right: 30px;
   border-radius: 50%;
   border: 0;
-  background-color: #29cccc;
+  background-color: #cc3b75;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: white;
